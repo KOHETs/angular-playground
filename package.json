@@ -15,7 +15,7 @@
     "affected:apps": "node ./node_modules/@nrwl/schematics/src/command-line/affected.js apps",
     "affected:build": "node ./node_modules/@nrwl/schematics/src/command-line/affected.js build",
     "affected:e2e": "node ./node_modules/@nrwl/schematics/src/command-line/affected.js e2e",
-    "format": "node ./node_modules/@nrwl/schematics/src/command-line/format.js write",
+    "format": "prettier --write \"{apps,libs}/**/*.ts\"",
     "format:write": "node ./node_modules/@nrwl/schematics/src/command-line/format.js write",
     "format:check": "node ./node_modules/@nrwl/schematics/src/command-line/format.js check",
     "nx-migrate": "node ./node_modules/@nrwl/schematics/src/command-line/nx-migrate.js"
